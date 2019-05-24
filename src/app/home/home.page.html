@@ -9,18 +9,15 @@
 <ion-content>
 
 <ion-list>
-  <ion-item>
-    <ion-item>
+    <ion-item *ngFor="let chat of chatRooms" (click)="openChat(chat)">
     <ion-avatar>
-      <ion-img src="https://picsum.photos/200"></ion-img>
+      <ion-img [src]="chat.img"></ion-img>
     </ion-avatar>
     <ion-label>
-      <h2>Chat online</h2>
-      <h3>Pagina de pruebas</h3>
-      <p>Lista boton click y accede</p>
+      <h2><b>{{ chat.name }}</b></h2>
+      <p>{{ chat.description }}</p>
     </ion-label>
     </ion-item>
-  </ion-item>
 </ion-list>
 
   <ion-button (click)="Onlogout()">Cerrar Sesion</ion-button>
