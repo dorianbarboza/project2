@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar color="primary">
+  <ion-toolbar color="dark">
     <ion-title text="center">Iniciar sesion</ion-title>
   </ion-toolbar>
 </ion-header>
@@ -8,17 +8,17 @@
 
   <img class="icon" src="assets/icon/icon1.png">
 
-  <ion-item>
+  <ion-item color="dark">
     <ion-label position="floating">Correo electronico</ion-label>
     <ion-input type="text" [(ngModel)]="email" name="email"></ion-input>
   </ion-item>
 
-  <ion-item>
+  <ion-item color="dark">
     <ion-label position="floating">Contraseña</ion-label>
     <ion-input type="password" [(ngModel)]="password" name="password"></ion-input>
   </ion-item>
   <br>
-  <ion-button (click)="onSubmitLogin()" expand="block">Entrar</ion-button>
+  <ion-button (click)="onSubmitLogin()" color="dark" expand="block">Entrar</ion-button>
 
 </ion-content>
 
